@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Earrings</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="">
+</head>
+<style>
+    .add-to-cart{
+        background-color: #000;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+    }
+.card-texts{
+      color: red;
+      font-size: 19px;
+    }
+    body {
+            font-family:'old standard TT';
+            margin: 0;
+            padding: 0;
+        }
+        @media screen and (max-width: 1200px) {
+    header.-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+header {
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+}
+
+.contact-info {
+    display: flex;
+    gap: 20px;
+    font-size: 14px;
+}
+
+.contact-info .phone i, .contact-info .branch i {
+    margin-right: 5px;
+}
+
+.logo img {
+    height: 60px;
+    text-decoration-color: #999;
+}
+
+.user-cart {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.user-cart a {
+    color: #333;
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+}
+
+.user-cart .cart .cart-total {
+    margin-left: 5px;
+    font-size: 16px;
+    color: orange;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    padding: 15px 20px;
+}
+
+.main-nav ul {
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+}
+
+.main-nav ul li {
+    position: relative;
+}
+
+.main-nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+.main-nav ul li a:hover {
+    background-color: #333;
+    border-radius: 5px;
+}
+
+.main-nav ul li .sale {
+    color: orange;
+}
+
+.main-nav .search-bar {
+    display: flex;
+    gap: 10px;
+}
+
+.search-bar input {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+}
+
+.search-bar button {
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-bar button i {
+    font-size: 18px;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Header Section */
+header {
+    padding: 30px;
+    background-color:#B7B7B7
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.navbar li {
+    display: inline;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Header Section */
+header {
+    padding: 30px;
+    background-color:#B7B7B7;
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.navbar li {
+    display: inline;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/* Hero Section */
+#hero {
+    position: relative;
+    height: 60vh;
+}
+
+.hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  
+
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-overlay h1 {
+    color: white;
+    font-size: 60px;
+}
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+           
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .filter-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .sort-by {
+            display: flex;
+            align-items: center;
+        }
+
+        .sort-by label {
+            margin-right: 10px;
+        }
+
+        .sort-by select {
+            padding: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .showing-results {
+            font-size: 14px;
+            color: #999;
+        }
+       
+        .containers{
+            display: flex;
+        }
+        footer {
+    background-color: #f5f5f5;
+    padding: 40px 0;
+    color: #333;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    margin: 10px;
+}
+
+.footer-section h3 {
+    margin-bottom: 20px;
+}
+
+.footer-section p,
+.footer-section ul,
+.footer-section form {
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style-type: none;
+}
+
+.footer-section ul li a {
+    color: #333;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.footer-section ul li a:hover {
+    color: GRAY;
+}
+
+.footer-logo {
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    color: #333;
+    text-decoration: none;
+    margin-right: 15px;
+    font-size: 20px;
+}
+
+.social-icons a:hover {
+    color: orange;
+}
+
+form {
+    display: flex;
+    align-items: center;
+}
+
+form input[type="email"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    flex: 1;
+}
+
+form button {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 0 3px 5px 0;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: gray;
+}
+
+.payment-icons img {
+    width: 40px;
+    margin-right: 10px;
+}
+</style>
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="contact-info">
+                <span class="phone"><i class="fa fa-phone"></i> +95476758486</span>
+                <span class="branch"><i class="fa fa-map-marker"></i> Nearest Branch</span>
+            </div>
+            <div class="logo">
+                <img src="https://i.pinimg.com/564x/c0/00/75/c000759afc17cb5241e0bb471462d2d3.jpg" alt="Jewelry Line Logo">
+                
+            </div>
+            <div class="user-cart">
+                <a href="#" class="user"><i class="bi bi-cart"></i>
+                <a href="#" class="cart">
+                    <i class="bi bi-cart"></i>
+                    <span class="cart-total">PKR 0</span>
+                </a>
+            </div>
+        </div>
+    
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index2.html">Home</a></li>
+                <li><a href="index.html">shop</a></li>
+                <li><a href="index1.html">contact</a></li>
+                <li><a href="index3.html">sale</a></li>
+            </ul>
+            <div class="search-bar">
+                <input type="text" placeholder="Search products">
+                <button><i class="fa fa-search"></i></button>
+            </div>
+        </nav>
+    </header>
+    </section>
+
+    
+    <div class="container">
+        <h1 class="text-center">Sale</h1>
+
+        <div class="filter-container">
+            <div class="sort-by">
+                <label for="sort">Sort By:</label>
+                <select id="sort">
+                    <option value="default">Sort</option>
+                    <option value="price-asc">Price: Low to High</option>
+                    <option value="price-desc">Price: High to Low</option>
+                </select>
+            </div>
+
+            <div class="showing-results">
+                Showing 1 - 50 of 338 results
+            </div>
+        </div>
+    
+    <section id="projects" class="bg-light py-5">
+        <div class="container">
+           
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="https://i.pinimg.com/236x/2b/c4/af/2bc4aff846fe6adfa657d4ce2f3b1753.jpg" class="card-img-top" height="400" alt="Project 1">
+                        <div class="card-body">
+                           
+                         
+                            <p class="card-text">PKR 13,500 
+                               <strike>PKR 14,500</strike> </p>
+                               <button class="add-to-cart" onclick="showAlert()">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="https://i.pinimg.com/236x/a5/0a/59/a50a59145caedaede1037fcd27907615.jpg" class="card-img-top"height="370"  alt="Project 2">
+                        <div class="card-body">
+                          
+                            <br>
+                            <p class="card-texts">sold out</p>
+                            <br>
+                          <span></span>
+                          <br>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="https://i.pinimg.com/474x/54/cd/49/54cd49ea3e86223531801f3274c55ddf.jpg" class="card-img-top" height="400" alt="Project 3">
+                        <div class="card-body">
+                           
+                    
+                        
+                   
+                            <p class="card-text">PKR 4,950 <strike>PKR 5,500</strike> </p>
+                            
+                            <button class="add-to-cart" onclick="showAlert()">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section id="projects" class="bg-light py-5">
+                <div class="containers">
+                   
+                    <div class="row">
+            
+        <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="https://i.pinimg.com/474x/aa/f9/8e/aaf98e848bc8bd6df36ef725daa01660.jpg" class="card-img-top"height="400"  alt="Project 3">
+                        <div class="card-body">
+                           
+                            <p class="card-text">PKR 6,250<strike>PKR 12,500</strike> </p>
+                            <button class="add-to-cart" onclick="showAlert()">ADD TO CART</button>
+                        </div>
+                    </div>
+        </div> 
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img src="https://i.pinimg.com/564x/f9/45/e5/f945e55ce36a597555be665450cb5e2d.jpg" class="card-img-top" height="440" alt="Project 3">
+                <div class="card-body">
+                    <p class="card-texts">sold out</p>
+                    
+                </div>
+            </div>
+            
+</div> 
+<div class="col-md-4">
+    <div class="card mb-4">
+        <img src="https://i.pinimg.com/236x/58/4c/b1/584cb185fe9d5c23c3eca3e53abde7fd.jpg" class="card-img-top" height="400" alt="Project 3">
+        <div class="card-body">
+           
+            
+            <p class="card-text">PKR 15,500  <strike>PKR 16,500</strike> </p>
+            
+            <button class="add-to-cart" onclick="showAlert()">ADD TO CART</button>
+        </div>
+    </div>
+</div>
+<div class="col-md-4">
+    <div class="card mb-4">
+        <img src="https://i.pinimg.com/236x/58/ba/ed/58baed12e1e87d32abdae91a7757ebe9.jpg" class="card-img-top"height="400"  alt="Project 3">
+        <div class="card-body">
+           
+            
+            <p class="card-text">PKR 6,800 <strike>PKR 7,800</strike> </p>
+            
+            <button class="add-to-cart" onclick="showAlert()">ADD TO CART</button>
+        </div>
+    </div>    
+</div>
+<div class="col-md-4">
+    <div class="card mb-4">
+        <img src="https://i.pinimg.com/564x/f4/7c/ca/f47cca4cce33822125851d0396293021.jpg" class="card-img-top"height="400" alt="Project 3">
+        <div class="card-body">
+           
+            
+            <p class="card-text">PKR 7,500 <strike>PKR 11,500</strike> </p>
+            
+            <button class="add-to-cart" onclick="showAlert()">ADD TO CART</button>
+        </div>
+    </div>
+</div>
+<div class="col-md-4">
+    <div class="card mb-4">
+        <img src="https://i.pinimg.com/236x/29/bf/f9/29bff9c54a10afaf52fdc0e769080b6d.jpg" class="card-img-top" height="400" alt="Project 3">
+        <div class="card-body">
+          
+           
+            <p class="card-text">PKR 9,850 <strike>PKR 12,500</strike> </p>
+            
+            <button class="add-to-cart" onclick="showAlert()">ADD TO CART</button>
+        </div>
+    </div>
+</div>
+
+
+        </div>
+            </section>
+        
+    </section>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <img src="https://i.pinimg.com/564x/c0/00/75/c000759afc17cb5241e0bb471462d2d3.jpg" alt="Heritage Logo" class="footer-logo">
+                <p>2nd Floor Ocean Mall Clifton, Karachi</p>
+                <p><i class="fa fa-envelope"></i> AJ@hotmail.com</p>
+                <p><i class="fa fa-phone"></i> +92 2135821232</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                </div>
+            </div>
+    
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-section">
+                <h3>Information</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Stores</a></li>
+                    <li><a href="#">After Sale Service</a></li>
+                    <li><a href="#">Refund & Exchange Policy</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">How to Order</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-section">
+                <h3>Newsletter Signup</h3>
+                <p>Subscribe to our newsletter and get 5% off your first purchase</p>
+                <form>
+                    <input type="email" placeholder="Your email address">
+                    <button type="submit">Subscribe</button>
+                </form>
+                <div class="payment-icons">
+                    <img src="https://i.pinimg.com/564x/b6/43/2f/b6432f4ed843becbfde21aa9bee5cab7.jpg" alt="Visa">
+                    <img src="https://i.pinimg.com/236x/79/77/9f/79779f77d2a5aa5eca98d313c10c7f0e.jpg" alt="Mastercard">
+                    <img src="https://i.pinimg.com/236x/bf/52/b8/bf52b87c9c500e5502da41ccb04c9ef1.jpg" alt="Amex">
+                    <img src="https://i.pinimg.com/564x/8a/91/46/8a9146626fb139b4d6bff3f091d47ca8.jpg" alt="Apple Pay">
+                    <img src="https://i.pinimg.com/474x/8d/ec/e1/8dece15cc40aaf66ed47f6591b639d06.jpg" alt="Google Pay">
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+
+    <script>
+        
+    function showAlert() {
+        alert("AAD TO CART SUCCESSFULLY ");
+    }
+
+    // Generate product cards on page load
+        generateProductCards(products);
+
+        // Add event listener to sort dropdown
+        document.getElementById("sort").addEventListener("change", function() {
+            const selectedSort = this.value;
+
+            // Implement sorting logic here
+            // For now, just regenerate the product cards
+            generateProductCards(products);
+        });</script>
+</body>
+</html>
